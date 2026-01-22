@@ -16,6 +16,7 @@ The project focuses on complex user interactions, spatial UI handling, and real-
   - Video clues
 - Drag and reposition clues freely on the board
 - Connect clues visually to represent relationships
+- Change connections' colors accordingly 
 - Pan and zoom across an infinite board space
 - Edit and delete clues
 - Smooth, interactive board experience
@@ -26,9 +27,7 @@ The project focuses on complex user interactions, spatial UI handling, and real-
 
 ### Frontend
 - React
-- JavaScript (ES6+)
-- HTML5, CSS3
-- Canvas / DOM-based interactions
+- SVG board and elements
 - State management using React hooks
 
 ### Backend
@@ -37,10 +36,6 @@ The project focuses on complex user interactions, spatial UI handling, and real-
 - MongoDB
 - RESTful APIs
 
-### Other Tools
-- Git & GitHub
-- VS Code
-
 ---
 
 ## 🧠 What I Learned
@@ -48,8 +43,6 @@ The project focuses on complex user interactions, spatial UI handling, and real-
 - Designing interactive UIs with drag, pan, and zoom functionality
 - Managing complex frontend state efficiently
 - Structuring REST APIs for scalable applications
-- Data modeling for relational concepts like connected clues
-- Handling real-world frontend–backend integration challenges
 - Debugging and improving user experience iteratively
 
 ---
@@ -91,8 +84,8 @@ Follow the steps below to run **NOIR** locally on your machine.
 
 ### 📥 Clone the Repository
 
-    git clone https://github.com/yogeshsuman77/noir.git
-    cd noir
+    git clone https://github.com/yogeshsuman77/NOIR.git
+    cd NOIR
 
 ---
 
@@ -120,7 +113,7 @@ Follow the steps below to run **NOIR** locally on your machine.
 #### Start Frontend
 
     cd frontend
-    npm start
+    npm run dev
 
 The frontend will run on http://localhost:5000  
 The backend will run on its configured port.
@@ -139,7 +132,7 @@ The backend will run on its configured port.
 **Yogesh Suman**  
 MERN Stack Developer  
 
-Built as a personal project to strengthen full-stack development skills through a real-world, interaction-heavy application.
+Built as a personal project to strengthen MERN Stack development skills through a real-world, interaction-heavy application.
 
 ---
 
