@@ -1,0 +1,45 @@
+.tool-menu {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  z-index: 9999;
+
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  pointer-events: auto;
+}
+
+.tool-menu button {
+  background: none;
+  border: none;
+  color: #e6e6e6;
+
+  padding: 8px 12px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.tool-menu button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tool-menu button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.menu-title {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #7a7a7a;
+  margin-bottom: 4px;
+}

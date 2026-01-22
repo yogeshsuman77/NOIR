@@ -1,0 +1,29 @@
+.connection-editor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 14px;
+  width: 220px;
+
+  color: #eaeaea;
+  z-index: 2000;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.editor-header button {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}

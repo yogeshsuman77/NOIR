@@ -1,0 +1,17 @@
+.ghost-clue rect {
+  fill: rgba(255, 255, 255, 0.06);
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-dasharray: 4 4;
+}
+
+.ghost-content {
+  color: #aaa;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.ghost-content img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}

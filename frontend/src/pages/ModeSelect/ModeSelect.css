@@ -1,0 +1,94 @@
+.mode-page {
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mode-header {
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mode-header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.mode-header p {
+  font-size: 14px;
+  color: #9a9a9a;
+  line-height: 1.6;
+}
+
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.mode-card {
+  position: relative;
+  padding: 32px;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mode-card p {
+  font-size: 13px;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.mode-card.active:hover {
+  border-color: #6ae3ff;
+  background: rgba(106, 227, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+.mode-card.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.mode-tag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(106, 227, 255, 0.15);
+  color: #6ae3ff;
+}
+
+.mode-tag.locked {
+  background: rgba(255, 184, 108, 0.15);
+  color: #ffb86c;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .mode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mode-header h1 {
+    font-size: 26px;
+  }
+}

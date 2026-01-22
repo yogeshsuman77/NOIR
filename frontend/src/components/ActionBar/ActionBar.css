@@ -1,0 +1,25 @@
+.action-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 200;
+
+  display: flex;
+  gap: 10px;
+}
+
+.action-bar button {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+
+  border: 1px solid #333;
+  background: #0b0b0b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.action-bar button.active {
+  border-color: #6ae3ff;
+  color: #6ae3ff;
+}

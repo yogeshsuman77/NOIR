@@ -1,0 +1,132 @@
+.cases-page {
+  min-height: 100vh;
+  padding: 80px 6vw;
+  background:
+    radial-gradient(circle at top, #141414 0%, #050505 60%),
+    linear-gradient(180deg, #000, #0a0a0a);
+  color: #eaeaea;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+
+.cases-header {
+  margin-bottom: 60px;
+}
+
+.cases-header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  /* font-weight: 500; */
+}
+
+.cases-header p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #9a9a9a;
+  letter-spacing: 1px;
+}
+
+
+.status-text {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.status-text.error {
+  color: #ff6b6b;
+}
+
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+
+
+.case-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.case-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(106, 227, 255, 0.15),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.case-card:hover::before {
+  opacity: 1;
+}
+
+.case-card:hover {
+  border-color: #6ae3ff;
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px rgba(106, 227, 255, 0.15);
+}
+
+.case-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.case-card p {
+  font-size: 13px;
+  color: #bdbdbd;
+  line-height: 1.4;
+}
+
+
+.create-case {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #2a2a2a;
+  background: rgba(10, 10, 10, 0.6);
+}
+
+.create-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #6ae3ff;
+}
+
+.create-inner .plus {
+  font-size: 42px;
+  line-height: 1;
+}
+
+.create-case:hover {
+  background: rgba(106, 227, 255, 0.06);
+}
+
+
+
+@media (max-width: 768px) {
+  .cases-page {
+    padding: 60px 20px;
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}

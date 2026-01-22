@@ -1,0 +1,79 @@
+.create-case-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.create-case-modal {
+  width: 100%;
+  max-width: 420px;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 24px;
+  color: #fff;
+}
+
+.create-case-modal h3 {
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+}
+
+.create-case-modal input,
+.create-case-modal textarea {
+  width: 100%;
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.create-case-modal textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  color: #bdbdbd;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-create {
+  background: #6ae3ff;
+  border: none;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-create:disabled,
+.btn-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.modal-error {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin-bottom: 10px;
+}

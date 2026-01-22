@@ -1,0 +1,48 @@
+.connection-line {
+  stroke: #3a3a3a;
+  stroke-width: 2;
+}
+
+
+.connection-preview {
+  stroke: #6ae3ff;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+  pointer-events: none;
+}
+
+
+
+.connection-group .connection-controls {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.connection-group:hover .connection-controls {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.connection-arrow {
+  fill: #6ae3ff;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+
+
+.connection-controls {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.connection-group:hover .connection-arrow {
+  opacity: 0;
+}
+
+.connection-group:hover .connection-controls {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -1,0 +1,51 @@
+.intro {
+  height: 100vh;
+  background-image: url('/images/IntroPagePoster.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+
+.intro img{
+  width: 350px;
+  /* background: red; */
+  
+}
+
+.intro p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  /* opacity: 0.6; */
+  margin-bottom: 48px;
+  margin-top: 5px;
+}
+
+.intro button {
+  padding: 14px 36px;
+  border: 1px solid #eaeaea;
+  color: #eaeaea;
+  letter-spacing: 2px;
+  font-size: 12px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.intro button:hover {
+  border-color: #6ae3ff;
+  color: #6ae3ff;
+}
