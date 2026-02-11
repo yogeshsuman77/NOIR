@@ -15,37 +15,38 @@ export const createClue = ({
   const now = Date.now();
 
   return {
-    id,
+  id,
 
-    // how this clue should be rendered
-    type,
+  type,
+  data,
 
-    // raw evidence (image, text, link, etc.)
-    data,
+  note: {
+    text: noteText,
+    lastEditedAt: noteText ? now : null,
+  },
 
-    // investigator's personal observation
-    note: {
-      text: noteText,
-      lastEditedAt: noteText ? now : null,
-    },
+  tags,
 
-    // soft classification
-    tags,
+  meta: {
+    source,
+    confidence: null,
+    createdBy,
+  },
 
-    // system-level metadata
-    meta: {
-      source,
-      confidence: null,
-      createdBy,
-    },
+  position: {
+    x,
+    y,
+  },
 
-    // spatial meaning on the board
-    position: {
-      x,
-      y,
-    },
+  // 🔥 NEW: sizing system
+  size: {
+    width: null,     // number | null
+    height: null,    // number | null
+    mode: "auto",    // "auto" | "manual"
+  },
 
-    createdAt: now,
-    updatedAt: now,
-  };
+  createdAt: now,
+  updatedAt: now,
+};
+
 };
